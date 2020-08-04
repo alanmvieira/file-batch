@@ -19,14 +19,14 @@ A aplicação construída é um processador de arquivos de venda em formato .dat
 
 ### Execução
 1. Definir a váriavel de ambiente $HOME que deverá ser o diretório utilizado pela aplicação para ler as entradas e escrever as saídas
-3. Clonar o repositório com o seguinte comando `https://github.com/iurymarques/file-batch.git`
+3. Clonar o repositório com o seguinte comando `git clone https://github.com/iurymarques/file-batch.git`
 4. Importe o projeto no Intellij IDEA
 5. Iniciar a aplicação
 
 OU
 
 1. Definir a váriavel de ambiente $HOME que deverá ser o diretório utilizado pela aplicação para ler as entradas e escrever as saídas
-2. Clonar o repositório com o seguinte comando `https://github.com/iurymarques/file-batch.git`
+2. Clonar o repositório com o seguinte comando `git clone https://github.com/iurymarques/file-batch.git`
 3. Compilar o projeto com o comando `./mvnw clean package`
 4. Iniciar a aplicação com o comando `java -jar target/*.jar`
 
