@@ -1,0 +1,6 @@
+version: '2'
+services:
+  file-batch:
+    image: iurymarques/file-batch:0.0.1-SNAPSHOT
+    volumes:
+    - $HOME/data:/root/data
