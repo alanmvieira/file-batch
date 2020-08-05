@@ -1,3 +1,5 @@
+![](https://github.com/iurymarques/file-batch/workflows/tests/badge.svg)
+
 # Processamento Arquivos de Venda
 
 ## Sobre
