@@ -41,7 +41,8 @@ Foram utilizados alguns padrões e processos durante o desenvolvimento deste pro
 1. Clonar o repositório com o seguinte comando: `git clone https://github.com/iurymarques/file-batch.git`  
 2. Criar um diretório com o nome **data** na sua home.
 3. Compilar o projeto com o comando: `./mvnw clean package`  
-3. Iniciar a aplicação através do docker-compose fornecido:  `docker-compose up -d`  
+4. Alterar o caminho para a sua pasta **data** no docker-compose caso seja necessário.
+5. Iniciar a aplicação através do docker-compose fornecido:  `docker-compose up -d`  
   
 ## Exemplos  
 - Adicionando um arquivo .dat com o seguinte conteúdo na pasta: `"$HOME"/data/in`  
