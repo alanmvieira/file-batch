@@ -1,6 +1,7 @@
 package br.com.iurymarques.filebatch.batch;
 
 import br.com.iurymarques.filebatch.domain.SaleReport;
+import br.com.iurymarques.filebatch.util.FileUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.batch.item.ItemWriter;
@@ -44,17 +45,17 @@ public class FileWriter implements ItemWriter<SaleReport> {
         String filename = getDoneFilename(path);
 
         Path outputPath = Paths.get(outputDirectory);
-        Files.createDirectories(outputPath);
+        FileUtil.createPublicDirectory(outputPath);
 
         Path outputFile = outputPath.resolve(filename);
 
         LOG.info("ITEM WRITER --> Writing result fo file {}", outputFile);
-        Files.write(outputFile, report.getBytes());
+        FileUtil.writePublic(outputFile, report.getBytes());
     }
 
     private void moveFileToDirectory(Path oldPath, String directory) throws IOException {
         Path newPath = Paths.get(directory);
-        Files.createDirectories(newPath);
+        FileUtil.createPublicDirectory(newPath);
 
         String filename = oldPath.getFileName().toString();
         Path newFilePath = newPath.resolve(filename);
