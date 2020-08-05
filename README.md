@@ -1,4 +1,5 @@
-![](https://github.com/iurymarques/file-batch/workflows/tests/badge.svg)
+![](https://github.com/iurymarques/file-batch/workflows/tests/badge.svg) 
+[![codecov](https://codecov.io/gh/iurymarques/file-batch/branch/master/graph/badge.svg)](https://codecov.io/gh/iurymarques/file-batch)
 
 # Processamento Arquivos de Venda
 
